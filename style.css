@@ -6,25 +6,25 @@
     }
 
     body {
-      background-color: #f9fafb;
-      color: #111827;
+      background-color: #f5f7fb;
+      color: #1f2937;
     }
 
     /* ===== HEADER ===== */
     header {
       width: 100%;
-      padding: 16px 50px;
-      background-color: #ffffff;
+      padding: 18px 50px;
+      background: linear-gradient(90deg, #4f46e5, #2563eb);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e5e7eb;
     }
 
     .logo {
       font-size: 24px;
-      font-weight: 600;
-      color: #2563eb;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
     }
 
     nav ul {
@@ -36,12 +36,13 @@
     nav ul li a {
       text-decoration: none;
       font-size: 15px;
-      color: #374151;
+      color: #e0e7ff;
       font-weight: 500;
+      transition: 0.3s;
     }
 
     nav ul li a:hover {
-      color: #2563eb;
+      color: #ffffff;
     }
 
     /* ===== HERO ===== */
@@ -49,54 +50,57 @@
       min-height: calc(100vh - 80px);
       display: flex;
       align-items: center;
-      padding: 60px;
-      background: #eff6ff;
+      padding: 70px;
+      background: linear-gradient(135deg, #eef2ff, #dbeafe);
     }
 
     .hero-wrapper {
-      max-width: 800px;
+      max-width: 850px;
       width: 100%;
       margin: auto;
     }
 
     .hero-text h1 {
-      font-size: 44px;
+      font-size: 46px;
       margin-bottom: 18px;
+      color: #1e3a8a;
     }
 
     .hero-text p {
-      font-size: 17px;
-      color: #4b5563;
-      margin-bottom: 30px;
-      line-height: 1.6;
+      font-size: 18px;
+      color: #374151;
+      margin-bottom: 35px;
+      line-height: 1.7;
     }
 
     .hero-buttons button {
-      padding: 12px 26px;
+      padding: 13px 30px;
       font-size: 15px;
-      border-radius: 6px;
+      border-radius: 30px;
       border: none;
       cursor: pointer;
-      margin-right: 12px;
+      margin-right: 14px;
+      transition: 0.3s;
     }
 
     .btn-primary {
-      background-color: #2563eb;
+      background: linear-gradient(90deg, #4f46e5, #2563eb);
       color: #ffffff;
     }
 
     .btn-secondary {
-      background-color: transparent;
-      border: 1px solid #2563eb;
+      background-color: #ffffff;
       color: #2563eb;
+      border: 1px solid #2563eb;
     }
 
     .btn-primary:hover {
-      background-color: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(79,70,229,0.3);
     }
 
     .btn-secondary:hover {
-      background-color: #dbeafe;
+      background-color: #eff6ff;
     }
 
     /* ===== RESPONSIVE ===== */
@@ -105,6 +109,7 @@
         padding: 16px 20px;
         flex-direction: column;
         gap: 12px;
+        text-align: center;
       }
 
       nav ul {
@@ -112,11 +117,11 @@
       }
 
       .hero {
-        padding: 40px 20px;
+        padding: 50px 20px;
         text-align: center;
       }
 
       .hero-text h1 {
-        font-size: 32px;
+        font-size: 34px;
       }
     }
