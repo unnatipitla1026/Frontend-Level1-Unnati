@@ -1,5 +1,8 @@
-/* --- NAVBAR ---*/
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
-}
+/* HAMBURGER */
+  const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
